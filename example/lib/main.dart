@@ -134,7 +134,7 @@ class _MyAppState extends State<MyApp> {
                           print('LOCATOR: $locator');
                         });
                         await VocsyEpub.openAsset(
-                          'assets/test.epub',
+                          'assets/sample2.epub',
                           lastLocation: EpubLocator.fromJson({
                             "bookId": "2239",
                             "href": "/OEBPS/ch06.xhtml",
@@ -159,7 +159,7 @@ class _MyAppState extends State<MyApp> {
         ? await getExternalStorageDirectory()
         : await getApplicationDocumentsDirectory();
 
-    String path = '${appDocDir!.path}/sample.epub';
+    String path = '${appDocDir!.path}/sampleAA.epub';
     File file = File(path);
 
     if (!File(path).existsSync()) {
